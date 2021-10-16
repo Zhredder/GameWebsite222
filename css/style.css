@@ -1,0 +1,11 @@
+.search 
+{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+   
+}
+
+.search i {
+    color: black;
+}
