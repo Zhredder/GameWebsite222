@@ -1,0 +1,23 @@
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/grid-functions";
+/* ============ Grid ============ */
+@import "scss/grid";
+/* ============ Slideshow ============ */
+@import "scss/slideshow";
+
+/* ============ Main ============ */
+* {
+    box-sizing: border-box;
+}
+
+.search {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+}
+
+.search i {
+    color: #000000;
+}

@@ -1,0 +1,92 @@
+// Slideshow
+.slideshow {
+    position: relative;
+    margin: 0 42px;
+
+    .slide-container {
+        height: 500px;
+    }
+
+    .slide {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+// Fading animation
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Next & previous buttons
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    user-select: none;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.prev {
+    right: 100%;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    left: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+// Dots
+.dot-container {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+
+    &-container {
+        margin: auto;
+    }
+
+    &.active,
+    &:hover {
+        background-color: #717171;
+    }
+}
