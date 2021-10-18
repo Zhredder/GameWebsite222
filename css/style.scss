@@ -12,12 +12,36 @@
     box-sizing: border-box;
 }
 
-.search {
-    position: absolute;
-    top: 120px;
-    right: 100px;
+body {
+    margin: 0;
+    background-color: #222222;
+    color: #ffffff;
 }
 
-.search i {
+header {
+    background-color: #ffffff;
     color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+a {
+    color: #0066ff;
+    &:visited {
+        color: #cc00ff;
+    }
 }

@@ -81,10 +81,6 @@
     display: inline-block;
     transition: background-color 0.3s ease;
 
-    &-container {
-        margin: auto;
-    }
-
     &.active,
     &:hover {
         background-color: #717171;
