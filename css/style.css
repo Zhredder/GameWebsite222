@@ -573,13 +573,13 @@ nav {
 }
 
 footer {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
 .section-padding {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 a {
@@ -588,5 +588,9 @@ a {
 
 a:visited {
   color: #cc00ff;
+}
+
+.game img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
