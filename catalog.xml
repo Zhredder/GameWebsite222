@@ -7,7 +7,7 @@
         <engine>RAGE</engine>
         <platform>PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows, PlayStation 5, Xbox Series X/S</platform>
         <image>images/gta.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/QkkoHAzjnUs</video>
     </game>
     <game id="2">
         <title>Fortnite</title>
@@ -16,7 +16,7 @@
         <engine>Unreal engine 4 </engine>
         <platform>Microsoft Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android</platform>
         <image>images/fortnite.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/NcQnHvvnehY</video>
     </game>
     <game id="3">
         <title>Watch Dogs</title>
@@ -25,7 +25,7 @@
         <engine>Disrupt</engine>
         <platform>Amazon Luna, Microsoft Windows, PlayStation 3, PlayStation 4, PlayStation 5, Stadia, Xbox 360, Xbox One, Xbox Series X/S, Wii U </platform>
         <image>images/watchdogs.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/DqoQG_XYF-8</video>
     </game>
     <game id="4">
         <title>Fifa 22</title>
@@ -34,7 +34,7 @@
         <engine>Frostbite Engine</engine>
         <platform>Microsoft Windows, Nintendo Switch, PlayStation 4, PlayStation 5, Stadia, Xbox One, Xbox Series X/S</platform>
         <image>images/fifa.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/vLj-27T-SEQ</video>
     </game>
     <game id="5">
         <title>Sleeping Dogs</title>
@@ -43,7 +43,7 @@
         <engine>Unreal Engine 5</engine>
         <platform>Microsoft Windows, Console</platform>
         <image>images/sleepingdogs.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/lbGs8AJyT_Y</video>
     </game>
     <game id="6">
         <title>Dishonored</title>
@@ -115,7 +115,7 @@
         <engine>4A Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Xbox 360, Linux, OS X, Nintendo Switch, Stadia</platform>
         <image>images/metro.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/QThDHIu8sZE</video>
     </game>
     <game id="14">
         <title>Assassin's Creed Rogue</title>
@@ -124,7 +124,7 @@
         <engine>Anvilnext</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3, Xbox One, Xbox 360, Nintendo Switch</platform>
         <image>images/assassinscreed.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/RDeyI31pG8A</video>
     </game>
     <game id="15">
         <title>Hitman</title>
@@ -133,7 +133,7 @@
         <engine>Glacier Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Linux, Stadia, macOS</platform>
         <image>images/hitman.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/LVqxMCZ3u6k</video>
     </game>
     <game id="16">
         <title>Heavy Rain</title>
@@ -142,7 +142,7 @@
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3</platform>
         <image>images/heavyrain.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/YVYiJ3VSp60</video>
     </game>
     <game id="17">
         <title>Batman Arkham Knight</title>
@@ -151,7 +151,7 @@
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One</platform>
         <image>images/batman.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/dxa34RatmSc</video>
     </game>
     <game id="18">
         <title>Dying Light</title>
@@ -160,7 +160,7 @@
         <engine>Chrome Engine 6</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, macOS, Linux, Nintendo Switch</platform>
         <image>images/dyinglight.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/6C9NFL6j44c</video>
     </game>
     <game id="19">
         <title>Portal</title>
@@ -169,7 +169,7 @@
         <engine>Source</engine>
         <platform>Microsoft Windows, Playstation 3, Xbox 360, Linux, macOS X</platform>
         <image>images/portal.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/TluRVBhmf8w</video>
     </game>
     <game id="20">
         <title>Valorant</title>
@@ -178,7 +178,7 @@
         <engine>Uunreal Engine 4</engine>
         <platform>Microsoft Windows</platform>
         <image>images/valorant.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/e_E9W2vsRbQ</video>
     </game>
     <game id="21">
         <title>Sea of Thieves</title>
@@ -187,6 +187,6 @@
         <engine>Unreal Engine 4</engine>
         <platform>Microsoft Windows, Xbox One, Xbox Series X/S</platform>
         <image>images/sot.jpg</image>
-        <video></video>
+        <video>https://www.youtube.com/embed/r5JIBaasuE8</video>
     </game>
 </catalog>
