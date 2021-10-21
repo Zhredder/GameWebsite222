@@ -23,7 +23,7 @@ if (file_exists($filename)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    echo "<title>Vapor - " . $game->title . "</title>\n";
+    echo "<title>Vapour - " . $game->title . "</title>\n";
     ?>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="fontawesome/js/all.js"></script>
@@ -36,9 +36,11 @@ if (file_exists($filename)) {
                 <a href=".">
                     <img src="images/logo.png" class="logo">
                 </a>
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
+                <div class="nav-list">
+                    <a href=".">Home</a>
+                    <?php
+                    echo "<a href='game.php?id=" . random_int(1, 20) . "'>Random Game</a>";
+                    ?>
                 </div>
             </nav>
         </div>
@@ -57,15 +59,9 @@ if (file_exists($filename)) {
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="img-sm">
-                        <?php
-                        if ($game->image != "") {
-                            echo "<div class='img-container' style='background-image: url(" . $game->image . ");'></div>\n";
-                        } else {
-                            echo "<div class='img-container' style='background-image: url(images/logo.png);'></div>\n";
-                        }
-                        ?>
-                    </div>
+                    <?php
+                    echo "<img class='img-100' src='" . $game->image . "'>\n";
+                    ?>
                     <?php
                     echo "<h1>" . $game->title . "</h1>\n";
                     echo "<p>Developer: " . $game->developer . "</p>\n";

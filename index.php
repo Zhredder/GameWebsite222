@@ -23,9 +23,11 @@ error_reporting(E_ALL);
                 <a href=".">
                     <img src="images/logo.png" class="logo">
                 </a>
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
+                <div class="nav-list">
+                    <a href=".">Home</a>
+                    <?php
+                    echo "<a href='game.php?id=" . random_int(1, 20) . "'>Random Game</a>";
+                    ?>
                 </div>
             </nav>
         </div>
@@ -100,6 +102,7 @@ error_reporting(E_ALL);
                     </select>
                 </div>
             </div>
+
             <div id="games-list" class="row">
                 <?php
                 foreach ($catalog->children() as $game) {
@@ -110,14 +113,11 @@ error_reporting(E_ALL);
                         . "' data-engine='" . $game->engine
                         . "' data-platform='" . $game->platform
                         . "'>\n";
+                    echo "<div class='item'>\n";
                     echo "<a href='game.php?id=" . $game['id'] . "' class=''>";
-                    if ($game->image != "") {
-                        echo "<img src='" . $game->image . "'>";
-                    } else {
-                        echo "<img src='images/logo.png'>";
-                    }
+                    echo "<img src='" . $game->image . "'>";
                     echo "<p><span class='h2'>" . $game->title . "</span><br>" . $game->genre . "</p>";
-                    echo "</a>\n</div>\n";
+                    echo "</a>\n</div>\n</div>\n";
                 }
                 ?>
             </div>

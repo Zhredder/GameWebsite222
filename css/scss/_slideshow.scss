@@ -4,7 +4,13 @@
     margin: 0 42px;
 
     .slide-container {
-        height: 500px;
+        height: 200px;
+        @media (min-width: 768px) {
+            height: 400px;
+        }
+        @media (min-width: 992px) {
+            height: 500px;
+        }
     }
 
     .slide {

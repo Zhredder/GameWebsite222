@@ -20,14 +20,29 @@ body {
 }
 
 header {
+    padding: 1rem;
     background-color: #ffffff;
     color: #000000;
+    a {
+        color: #000;
+        text-decoration: none;
+        &:visited {
+            color: #000;
+        }
+        &:hover {
+            color: #f80;
+        }
+    }
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-list a {
+    margin: 1rem;
 }
 
 footer {
@@ -51,10 +66,10 @@ h2,
 }
 
 a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     &:visited {
-        color: #ffffff;
+        color: #fff;
     }
     &:hover {
         color: #bbbbbb;
@@ -79,8 +94,21 @@ a {
     display: none;
 }
 
-.game img {
-    width: 100%;
+.game {
+    .item {
+        margin-bottom: 2rem;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 3px 3px 10px #000;
+        img {
+            width: 100%;
+        }
+        p {
+            margin: 0;
+            padding-top: 0.2rem;
+            padding-left: 0.6rem;
+            padding-bottom: 0.5rem;
+        }
+    }
 }
 
 .img-container {
@@ -91,11 +119,8 @@ a {
     background-size: contain;
 }
 
-.img-sm {
-    height: 150px;
-    @media (min-width: 992px) {
-        height: 200px;
-    }
+.img-100 {
+    width: 100%;
 }
 
 .video {

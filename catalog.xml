@@ -6,7 +6,7 @@
         <developer>Rockstar North</developer>
         <engine>RAGE</engine>
         <platform>PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows, PlayStation 5, Xbox Series X/S</platform>
-        <image></image>
+        <image>images/gta.jpg</image>
         <video></video>
     </game>
     <game id="2">
@@ -15,7 +15,7 @@
         <developer>Epic Games </developer>
         <engine>Unreal engine 4 </engine>
         <platform>Microsoft Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android</platform>
-        <image></image>
+        <image>images/fortnite.jpg</image>
         <video></video>
     </game>
     <game id="3">
@@ -24,7 +24,7 @@
         <developer>Ubisoft</developer>
         <engine>Disrupt</engine>
         <platform>Amazon Luna, Microsoft Windows, PlayStation 3, PlayStation 4, PlayStation 5, Stadia, Xbox 360, Xbox One, Xbox Series X/S, Wii U </platform>
-        <image></image>
+        <image>images/watchdogs.jpg</image>
         <video></video>
     </game>
     <game id="4">
@@ -33,7 +33,7 @@
         <developer>EA Vancouver</developer>
         <engine>Frostbite Engine</engine>
         <platform>Microsoft Windows, Nintendo Switch, PlayStation 4, PlayStation 5, Stadia, Xbox One, Xbox Series X/S</platform>
-        <image></image>
+        <image>images/fifa.jpg</image>
         <video></video>
     </game>
     <game id="5">
@@ -42,7 +42,7 @@
         <developer>Square Enix</developer>
         <engine>Unreal Engine 5</engine>
         <platform>Microsoft Windows, Console</platform>
-        <image></image>
+        <image>images/sleepingdogs.jpg</image>
         <video></video>
     </game>
     <game id="6">
@@ -150,7 +150,7 @@
         <developer>Rocksteady Studios</developer>
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One</platform>
-        <image></image>
+        <image>images/batman.jpg</image>
         <video></video>
     </game>
     <game id="18">
@@ -177,7 +177,7 @@
         <developer>Riot Games</developer>
         <engine>Uunreal Engine 4</engine>
         <platform>Microsoft Windows</platform>
-        <image></image>
+        <image>images/valorant.jpg</image>
         <video></video>
     </game>
 </catalog>
