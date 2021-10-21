@@ -447,7 +447,19 @@
 }
 
 .slideshow .slide-container {
-  height: 500px;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .slideshow .slide-container {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slideshow .slide-container {
+    height: 500px;
+  }
 }
 
 .slideshow .slide {
@@ -551,13 +563,28 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
   background-color: #222222;
   color: #ffffff;
 }
 
 header {
+  padding: 1rem;
   background-color: #ffffff;
   color: #000000;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #000;
+}
+
+header a:hover {
+  color: #f80;
 }
 
 nav {
@@ -572,60 +599,112 @@ nav {
           justify-content: space-between;
 }
 
+.nav-list a {
+  margin: 1rem;
+}
+
 footer {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
+h1,
+.h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+}
+
 .section-padding {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 a {
-  color: #0066ff;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #cc00ff;
+  color: #fff;
 }
 
-.games-collection {
-  width: 20%;
-  border-radius: 10px;
-  margin: 40px;
-  box-shadow: 3px 3px 10px black;
+a:hover {
+  color: #bbbbbb;
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter {
   display: inline-block;
-  
-
+  margin-right: 1rem;
 }
 
-.game-image img {
+#games {
+  min-height: 800px;
+}
+
+.hide {
+  display: none;
+}
+
+.game .item {
+  margin-bottom: 2rem;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 3px 3px 10px #000;
+          box-shadow: 3px 3px 10px #000;
+}
+
+.game .item img {
   width: 100%;
-
 }
 
-.title  {
-  text-align: center;
-  
+.game .item p {
+  margin: 0;
+  padding-top: 0.2rem;
+  padding-left: 0.6rem;
+  padding-bottom: 0.5rem;
 }
 
-.play-button{
-  text-align: center;
-
+.img-container {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-button {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.img-100 {
+  width: 100%;
 }
 
-.catalogue 
-{
-  display: inline-block;
+@media (max-width: 768px) {
+  .video {
+    margin-bottom: 1rem;
+  }
 }
 
+.video-resize {
+  margin: 0px auto;
+}
 
+.video-resize > div {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+}
 
-
+.video-resize iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */

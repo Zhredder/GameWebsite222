@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +20,51 @@
     <header>
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                    <i class="fas fa-search"></i>
+                <a href=".">
+                    <img src="images/logo.png" class="logo">
+                </a>
+                <div class="nav-list">
+                    <a href=".">Home</a>
+                    <?php
+                    echo "<a href='game.php?id=" . random_int(1, 20) . "'>Random Game</a>";
+                    ?>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section id="banner">
+    <section id="banner" class="section-padding">
         <div class="container">
             <div class="slideshow">
                 <div class="slide-container">
                     <?php
-                    for ($i = 0; $i < 5; $i++) {
-                        echo "<div class='slide' style='background-image: url(images/logo.png);'></div>\n";
+                    $randomMax = 8;
+                    $filename = 'catalog.xml';
+                    if (file_exists($filename)) {
+                        $catalog = simplexml_load_file($filename);
+                        for ($i = 0; $i < $randomMax; $i++) {
+                            $num[$i] = rand(0, $catalog->count() - 1);
+                        }
+                        foreach ($num as $i) {
+                            $game = $catalog->children()[$i];
+                            echo "<a href='game.php?id=" . $game['id'] . "'>\n";
+                            echo "<div class='slide' style='background-image: url(" . $game->image . ");'></div>\n";
+                            echo "</a>\n";
+                        }
+                    } else {
+                        exit("Failed to open " . $filename);
                     }
                     ?>
-
                 </div>
                 <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
                 <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 <br>
                 <div class="dot-container">
                     <?php
-                    for ($i = 0; $i < 5; $i++) {
+                    for ($i = 0; $i < $randomMax; $i++) {
                         echo "<span class='dot' onclick='setSlide(" . $i . ")'></span>\n";
                     }
                     ?>
-
                 </div>
             </div>
         </div>
@@ -51,317 +72,66 @@
 
     <section id="games" class="section-padding">
         <div class="container">
-            <div class="row">
+            <div class="filter-container">
+                <div class="filter">
+                    <input id="search" type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter">
+                    <label for="sort-select">Sort</label>
+                    <select name="sort-select" id="sort-select">
+                        <option value="title" selected>Title A-Z</option>
+                        <option value="developer">Developer A-Z</option>
+                        <option value="genre">Genre A-Z</option>
+                        <option value="engine">Engine A-Z</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="platform-select">Platform: </label>
+                    <select name="platform-select" id="platform-select">
+                        <option value="" selected>All</option>
+                        <option value="windows">Windows</option>
+                        <option value="mac">macOS</option>
+                        <option value="linux">Linux</option>
+                        <option value="playstation 3">Playstation 3</option>
+                        <option value="playstation 4">Playstation 4</option>
+                        <option value="playstation 5">Playstation 5</option>
+                        <option value="xbox 360">Xbox 360</option>
+                        <option value="xbox one">Xbox One</option>
+                        <option value="xbox series x">Xbox Series X/S</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="games-list" class="row">
                 <?php
-                for ($i = 0; $i < 20; $i++) {
-                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game'>\n";
-                    echo "<a href='game.php?id=" . $i . "'>Game</a>\n";
-                    echo "</div>\n";
+                foreach ($catalog->children() as $game) {
+                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game'"
+                        . " data-title='" . $game->title
+                        . "' data-developer='" . $game->developer
+                        . "' data-genre='" . $game->genre
+                        . "' data-engine='" . $game->engine
+                        . "' data-platform='" . $game->platform
+                        . "'>\n";
+                    echo "<div class='item'>\n";
+                    echo "<a href='game.php?id=" . $game['id'] . "' class=''>";
+                    echo "<img src='" . $game->image . "'>";
+                    echo "<p><span class='h2'>" . $game->title . "</span><br>" . $game->genre . "</p>";
+                    echo "</a>\n</div>\n</div>\n";
                 }
                 ?>
             </div>
         </div>
     </section>
-    <!--Games Section-->
-<div class="Catalogue">
 
-<div class="games-collection">
-    <div class="game-image">
-         <img src="Images/batman.jpg">
-            </div>
-<div class="title">
-<h1>Batman: Arkham Knight </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div>    
-
-
-
-
-<div class="games-collection">
-    <div class="game-image">
-         <img src="Images/gta.jpg">
-            </div>
-<div class="title">
-<h1>GTA: 5 </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div>   
- 
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/fortnite.jpg">
-            </div>
-<div class="title">
-<h1>Fortnite </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/fifa.jpg">
-            </div>
-<div class="title">
-<h1>FIFA 22 </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/watchdogs.jpg">
-            </div>
-<div class="title">
-<h1>Watch Dogs </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/valorant.jpg">
-            </div>
-<div class="title">
-<h1>Valorant </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/sleepingdogs.jpg">
-            </div>
-<div class="title">
-<h1>Sleeping Dogs </h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/sot.jpg">
-            </div>
-<div class="title">
-<h1>Sea Of Thieves</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/dishonored.jpg">
-            </div>
-<div class="title">
-<h1>Dishonored</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/witcher.jpg">
-            </div>
-<div class="title">
-<h1>Witcher 3</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
-<div class="games-collection">
-    <div class="game-image">
-         <img src="Images/factorio.jpg">
-            </div>
-<div class="title">
-<h1>Factorio</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/justcause.jpg">
-            </div>
-<div class="title">
-<h1>Just Cause 3</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/hotlinemiami.jpg">
-            </div>
-<div class="title">
-<h1>Hotline Miami</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/doom.jpg">
-            </div>
-<div class="title">
-<h1>Doom Eternal</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/kerbalspaceprogram.jpg">
-            </div>
-<div class="title">
-<h1>Kerbal Space Program</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/assassinscreed.jpg">
-            </div>
-<div class="title">
-<h1>Assassins Creed Valhalla</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/hitman.jpg">
-            </div>
-<div class="title">
-<h1>Hitman 3</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- 
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/heavyrain.jpg">
-            </div>
-<div class="title">
-<h1>Heavy Rain</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
-
- 
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/portal.jpg">
-            </div>
-<div class="title">
-<h1>Portal</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
- 
- <div class="games-collection">
-    <div class="game-image">
-         <img src="Images/dyinglight.jpg">
-            </div>
-<div class="title">
-<h1>Dying Light</h1>
-    </div>
-
-<div class="play-button">   
-<button>Play!</button>
-</div>   
- </div> 
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-<!--Games Section End-->
-
-    <footer>
+    <!-- <footer>
         <div class="container">
             <p>Footer text</p>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="js/slideshow.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>

@@ -1,2 +1,10 @@
 Search logo - https://fontawesome.com/v5.15/icons/search?style=solid
 i elemtent - https://www.w3schools.com/tags/tag_i.asp
+
+Dishonored image - https://cdn.cloudflare.steamstatic.com/steam/apps/205100/capsule_616x353.jpg?t=1598321484
+Doom image - https://cdn.akamai.steamstatic.com/steam/apps/379720/capsule_616x353.jpg?t=1593395083
+Factorio image - https://cdn.cloudflare.steamstatic.com/steam/apps/427520/capsule_616x353.jpg?t=1620730652
+Hotline Miami 2 image - https://cdn.cloudflare.steamstatic.com/steam/apps/274170/capsule_616x353.jpg?t=1627314138
+Just Cause 3 image - https://news.xbox.com/en-us/wp-content/uploads/sites/2/JC3_Wingsuit_Key_Art_1920x1080.jpg
+Kerbal Space Program - https://cdn.akamai.steamstatic.com/steam/apps/220200/capsule_616x353.jpg?t=1623964605
+The Witcher 3 - https://images.gog-statics.com/60c724a052275a049d857d53957dc38e9347742f52372bb956d992b43efa8fb5_product_card_v2_mobile_slider_639.jpg
