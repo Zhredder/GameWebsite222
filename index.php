@@ -179,6 +179,173 @@
  </div> 
 
 
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/dishonored.jpg">
+            </div>
+<div class="title">
+<h1>Dishonored</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/witcher.jpg">
+            </div>
+<div class="title">
+<h1>Witcher 3</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+
+<div class="games-collection">
+    <div class="game-image">
+         <img src="Images/factorio.jpg">
+            </div>
+<div class="title">
+<h1>Factorio</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/justcause.jpg">
+            </div>
+<div class="title">
+<h1>Just Cause 3</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/hotlinemiami.jpg">
+            </div>
+<div class="title">
+<h1>Hotline Miami</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/doom.jpg">
+            </div>
+<div class="title">
+<h1>Doom Eternal</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/kerbalspaceprogram.jpg">
+            </div>
+<div class="title">
+<h1>Kerbal Space Program</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/assassinscreed.jpg">
+            </div>
+<div class="title">
+<h1>Assassins Creed Valhalla</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/hitman.jpg">
+            </div>
+<div class="title">
+<h1>Hitman 3</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ 
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/heavyrain.jpg">
+            </div>
+<div class="title">
+<h1>Heavy Rain</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+
+
+ 
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/portal.jpg">
+            </div>
+<div class="title">
+<h1>Portal</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+ 
+ <div class="games-collection">
+    <div class="game-image">
+         <img src="Images/dyinglight.jpg">
+            </div>
+<div class="title">
+<h1>Dying Light</h1>
+    </div>
+
+<div class="play-button">   
+<button>Play!</button>
+</div>   
+ </div> 
+
+
+
+
+
 
 
 
