@@ -1,0 +1,47 @@
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/grid-functions";
+/* ============ Grid ============ */
+@import "scss/grid";
+/* ============ Slideshow ============ */
+@import "scss/slideshow";
+
+/* ============ Main ============ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+a {
+    color: #0066ff;
+    &:visited {
+        color: #cc00ff;
+    }
+}
