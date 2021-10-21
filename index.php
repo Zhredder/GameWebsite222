@@ -45,7 +45,7 @@ error_reporting(E_ALL);
                         }
                         foreach ($num as $i) {
                             $game = $catalog->children()[$i];
-                            echo "<a href='game.php?id=" . $game['id'] . "'>";
+                            echo "<a href='game.php?id=" . $game['id'] . "'>\n";
                             echo "<div class='slide' style='background-image: url(" . $game->image . ");'></div>\n";
                             echo "</a>\n";
                         }
@@ -72,7 +72,7 @@ error_reporting(E_ALL);
         <div class="container">
             <div class="filter-container">
                 <div class="filter">
-                    <input type="text" placeholder="Search">
+                    <input id="search" type="text" placeholder="Search">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="filter">
@@ -87,21 +87,29 @@ error_reporting(E_ALL);
                 <div class="filter">
                     <label for="platform-select">Platform: </label>
                     <select name="platform-select" id="platform-select">
-                        <option value="all" selected>All</option>
-                        <option value="Windows">Windows</option>
+                        <option value="" selected>All</option>
+                        <option value="windows">Windows</option>
                         <option value="mac">macOS</option>
-                        <option value="Linux">Linux</option>
-                        <option value="Playstation">Playstation</option>
-                        <option value="Xbox">Xbox</option>
+                        <option value="linux">Linux</option>
+                        <option value="playstation 3">Playstation 3</option>
+                        <option value="playstation 4">Playstation 4</option>
+                        <option value="playstation 5">Playstation 5</option>
+                        <option value="xbox 360">Xbox 360</option>
+                        <option value="xbox one">Xbox One</option>
+                        <option value="xbox series x">Xbox Series X/S</option>
                     </select>
                 </div>
             </div>
             <div id="games-list" class="row">
                 <?php
                 foreach ($catalog->children() as $game) {
-                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game' 
-                    data-title='" . $game->title . "' data-developer='" . $game->developer . "' data-genre='" . $game->genre . "' 
-                    data-engine='" . $game->engine . "' data-platform='" . $game->platform . "'>\n";
+                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game'"
+                        . " data-title='" . $game->title
+                        . "' data-developer='" . $game->developer
+                        . "' data-genre='" . $game->genre
+                        . "' data-engine='" . $game->engine
+                        . "' data-platform='" . $game->platform
+                        . "'>\n";
                     echo "<a href='game.php?id=" . $game['id'] . "' class=''>";
                     if ($game->image != "") {
                         echo "<img src='" . $game->image . "'>";

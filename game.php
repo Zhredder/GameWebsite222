@@ -23,7 +23,7 @@ if (file_exists($filename)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    echo "<title>Vapor - " . $game->title . "</title>";
+    echo "<title>Vapor - " . $game->title . "</title>\n";
     ?>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="fontawesome/js/all.js"></script>
@@ -71,7 +71,7 @@ if (file_exists($filename)) {
                     echo "<p>Developer: " . $game->developer . "</p>\n";
                     echo "<p>Genre: " . $game->genre . "</p>\n";
                     echo "<p>Engine: " . $game->engine . "</p>\n";
-                    echo "<p>Platforms: " . $game->platform . "</p>"
+                    echo "<p>Platforms: " . $game->platform . "</p>\n"
                     ?>
                 </div>
             </div>
