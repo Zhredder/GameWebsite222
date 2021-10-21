@@ -20,7 +20,9 @@ error_reporting(E_ALL);
     <header>
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <a href=".">
+                    <img src="images/logo.png" class="logo">
+                </a>
                 <div class="search">
                     <input type="text" placeholder="Search">
                     <i class="fas fa-search"></i>
@@ -34,20 +36,21 @@ error_reporting(E_ALL);
             <div class="slideshow">
                 <div class="slide-container">
                     <?php
+                    $randomMax = 8;
                     $filename = 'catalog.xml';
                     if (file_exists($filename)) {
                         $catalog = simplexml_load_file($filename);
-                        foreach ($catalog->children() as $game) {
+                        for ($i = 0; $i < $randomMax; $i++) {
+                            $num[$i] = rand(0, $catalog->count() - 1);
+                        }
+                        foreach ($num as $i) {
+                            $game = $catalog->children()[$i];
                             echo "<a href='game.php?id=" . $game['id'] . "'>";
-                            if ($game->image) {
-                                echo "<div class='slide' style='background-image: url(" . $game->image . ");'></div>\n";
-                            } else {
-                                echo "<div class='slide' style='background-image: url(images/logo.png);'></div>\n";
-                            }
+                            echo "<div class='slide' style='background-image: url(" . $game->image . ");'></div>\n";
                             echo "</a>\n";
                         }
                     } else {
-                        exit("Failed to open catalog.xml");
+                        exit("Failed to open " . $filename);
                     }
                     ?>
                 </div>
@@ -56,7 +59,7 @@ error_reporting(E_ALL);
                 <br>
                 <div class="dot-container">
                     <?php
-                    for ($i = 0; $i < $catalog->count(); $i++) {
+                    for ($i = 0; $i < $randomMax; $i++) {
                         echo "<span class='dot' onclick='setSlide(" . $i . ")'></span>\n";
                     }
                     ?>
@@ -67,12 +70,38 @@ error_reporting(E_ALL);
 
     <section id="games" class="section-padding">
         <div class="container">
+            <div class="filter-container">
+                <div class="filter">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter">
+                    <label for="sort-select">Sort</label>
+                    <select name="sort-select" id="sort-select">
+                        <option value="title" selected>Title A-Z</option>
+                        <option value="developer">Developer A-Z</option>
+                        <option value="genre">Genre A-Z</option>
+                        <option value="engine">Engine A-Z</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="platform-select">Platform: </label>
+                    <select name="platform-select" id="platform-select">
+                        <option value="all" selected>All</option>
+                        <option value="Windows">Windows</option>
+                        <option value="Mac">Mac</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Playstation">Playstation</option>
+                        <option value="Xbox">Xbox</option>
+                    </select>
+                </div>
+            </div>
             <div class="row">
                 <?php
                 foreach ($catalog->children() as $game) {
                     echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game'>\n";
                     echo "<a href='game.php?id=" . $game['id'] . "' class=''>";
-                    if ($game->image) {
+                    if ($game->image != "") {
                         echo "<img src='" . $game->image . "'>";
                     } else {
                         echo "<img src='images/logo.png'>";
@@ -85,13 +114,14 @@ error_reporting(E_ALL);
         </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <p>Footer text</p>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="js/slideshow.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>

@@ -3,148 +3,181 @@
     <game id="1">
         <title>GTA V</title>
         <genre>Action-Adventure</genre>
-        <devolper>Rockstar North </devolper>
+        <developer>Rockstar North </developer>
         <engine>RAGE</engine>
         <platform>PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows, PlayStation 5, Xbox Series X/S</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="2">
         <title>Fortnite</title>
         <genre>Survival, battle royale, sandbox </genre>
-        <devolper>Epic Games </devolper>
+        <developer>Epic Games </developer>
         <engine>Unreal engine 4 </engine>
         <platform>Microsoft Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS,[b] Android[b] </platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="3">
         <title>Watch Dogs</title>
         <genre>Action-adventure</genre>
-        <devolper>Ubisoft</devolper>
+        <developer>Ubisoft</developer>
         <engine>Disrupt</engine>
         <platform>Amazon Luna, Microsoft Windows, PlayStation 3, PlayStation 4, PlayStation 5, Stadia, Xbox 360, Xbox One, Xbox Series X/S, Wii U </platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="4">
         <title>Fifa 22</title>
         <genre>Sports </genre>
-        <devolper>EA Vancouver</devolper>
+        <developer>EA Vancouver</developer>
         <engine>Frostbite Engine</engine>
         <platform>Microsoft Windows, Nintendo Switch, PlayStation 4, PlayStation 5, Stadia, Xbox One, Xbox Series X/S</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="5">
         <title>Sleeping Dogs</title>
         <genre>Action-Adventure</genre>
-        <devolper>Square Enix</devolper>
+        <developer>Square Enix</developer>
         <engine>Unreal Engine 5</engine>
         <platform>Microsoft Windows, Console</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="6">
         <title>Dishonored</title>
         <genre>Stealth, Action-adventure</genre>
-        <devolper>Arkane Studios</devolper>
+        <developer>Arkane Studios</developer>
         <engine>Unreal Engine 3</engine>
-        <platform>Microsoft Windows, Playstation 3, playstation 4, Xbox 360,Xbox One</platform>
+        <platform>Microsoft Windows, Playstation 3, Playstation 4, Xbox 360, Xbox One</platform>
         <image>images/dishonored.jpg</image>
+        <video>https://www.youtube.com/embed/-XbQgdSlsd0</video>
     </game>
     <game id="7">
         <title>Doom</title>
         <genre>First-person shooter</genre>
-        <devolper>id Software</devolper>
+        <developer>id Software</developer>
         <engine>id Tech 6</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Switch, Stadia</platform>
         <image>images/doom.jpg</image>
+        <video>https://www.youtube.com/embed/RO90omga8D4</video>
     </game>
     <game id="8">
         <title>Factorio</title>
         <genre>Factory simulator</genre>
-        <devolper>Wube Software</devolper>
+        <developer>Wube Software</developer>
         <engine>Custom</engine>
-        <platform>Microsoft Windows</platform>
-        <image>images/dishonored.jpg</image>
+        <platform>Microsoft Windows, Mac OS, Linux</platform>
+        <image>images/factorio.jpg</image>
+        <video>https://www.youtube.com/embed/J8SBp4SyvLc</video>
     </game>
     <game id="9">
         <title>Hotline Miami 2</title>
         <genre>Top-down shooter</genre>
-        <devolper>Dennaton Games</devolper>
+        <developer>Dennaton Games</developer>
         <engine>Game Maker 7/SilverWare</engine>
-        <platform>Microsoft Windows, PlayStation 4, playstation 3, PlayStation Vita, Xbox One, Android, Switch, Stadia</platform>
+        <platform>Microsoft Windows, Mac OS, Linux, PlayStation 4, Playstation 3, PlayStation Vita, Xbox One, Android, Switch, Stadia</platform>
         <image>images/hotline_miami2.jpg</image>
+        <video>https://www.youtube.com/embed/Kqr0yUuSiTs</video>
     </game>
     <game id="10">
         <title>Just Cause 3</title>
         <genre>Action-adventure</genre>
-        <devolper>Avalanche Studios</devolper>
+        <developer>Avalanche Studios</developer>
         <engine>Avalanche Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One</platform>
         <image>images/jc3.jpg</image>
+        <video>https://www.youtube.com/embed/k6Wb5LplWPk</video>
     </game>
     <game id="11">
         <title>Kerbal Space Program</title>
         <genre>Space flight simulator</genre>
-        <devolper>Squad</devolper>
+        <developer>Squad</developer>
         <engine>Unity</engine>
-        <platform>Microsoft Windows, Playstation 4, Playstation 5, Xbox One, Xbox Series X/S</platform>
+        <platform>Microsoft Windows, Mac OS, Linux, Playstation 4, Playstation 5, Xbox One, Xbox Series X/S</platform>
         <image>images/ksp.jpg</image>
+        <video>https://www.youtube.com/embed/7kTbo1wmN-w</video>
     </game>
     <game id="12">
         <title>The Witcher 3</title>
         <genre>Action RPG</genre>
-        <devolper>CD Projekt Red</devolper>
+        <developer>CD Projekt Red</developer>
         <engine>REDengine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 5, Xbox One, Xbox Series X/S, Nintendo Switch</platform>
         <image>images/the_witcher3.jpg</image>
+        <video>https://www.youtube.com/embed/c0i88t0Kacs</video>
     </game>
     <game id="13">
         <title>Metro 2033</title>
         <genre>First-person shooter</genre>
-        <devolper>4A Games</devolper>
+        <developer>4A Games</developer>
         <engine>4A Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Xbox 360, Linux, OS X, Nintendo Switch, Stadia</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="14">
         <title>Assassin's Creed Rogue</title>
         <genre>Action-Adventure</genre>
-        <devolper>Ubisoft</devolper>
+        <developer>Ubisoft</developer>
         <engine>Anvilnext</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3, Xbox One, Xbox 360, Nintendo Switch</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="15">
         <title>Hitman</title>
         <genre>Stealth</genre>
-        <devolper>IO Interacive</devolper>
+        <developer>IO Interacive</developer>
         <engine>Glacier Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Linux, Stadia, macOS</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="16">
         <title>Heavy Rain</title>
         <genre>Action-Adventure</genre>
-        <devolper>Quantic Dream</devolper>
+        <developer>Quantic Dream</developer>
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="17">
         <title>Batman Arkham Knight</title>
         <genre>Action-Adventure</genre>
-        <devolper>Rocksteady Studios</devolper>
+        <developer>Rocksteady Studios</developer>
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="18">
         <title>Dying Light</title>
         <genre>Horror</genre>
-        <devolper>Techland</devolper>
+        <developer>Techland</developer>
         <engine>Chrome Engine 6</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, macOS, Linux, Nintendo Switch</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="19">
         <title>Portal</title>
         <genre>Puzzle-platform</genre>
-        <devolper>Valve</devolper>
+        <developer>Valve</developer>
         <engine>Source</engine>
         <platform>Microsoft Windows, Playstation 3, Xbox 360, Linux, macOS X</platform>
+        <image></image>
+        <video></video>
     </game>
     <game id="20">
         <title>Valorant</title>
         <genre>First-Person Shooter</genre>
-        <devolper>Riot Games</devolper>
+        <developer>Riot Games</developer>
         <engine>Uunreal Engine 4</engine>
         <platform>Microsoft Windows</platform>
+        <image></image>
+        <video></video>
     </game>
 </catalog>
