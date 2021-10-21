@@ -1,11 +1,30 @@
-// Get games list
+// Sort
+var sortSelect = document.getElementById("sort-select");
 var gamesList = document.getElementById("games-list");
 
-// Convert HTML Collection to array
-var games = Array.prototype.slice.call(gamesList.children);
+sortSelect.addEventListener("change", sortSelected);
+sortSelected();
 
-// Sort array
-games.sort(sortGenre);
+function sortSelected() {
+    // Convert HTML Collection to array
+    var games = Array.prototype.slice.call(gamesList.children);
+    // Sort array
+    if (sortSelect.value == "title")
+        games.sort(sortTitle);
+    else if (sortSelect.value == "developer")
+        games.sort(sortDeveloper);
+    else if (sortSelect.value == "genre")
+        games.sort(sortGenre);
+    else if (sortSelect.value == "engine")
+        games.sort(sortEngine);
+
+    // Reatach the sorted elements
+    for (let i = 0; i < games.length; i++) {
+        // Detach and reattach element
+        var item = gamesList.removeChild(games[i]);
+        gamesList.appendChild(item);
+    }
+}
 
 function sortTitle(a, b) {
     return a.dataset.title.localeCompare(b.dataset.title);
@@ -22,13 +41,6 @@ function sortGenre(a, b) {
 function sortEngine(a, b) {
     return a.dataset.engine.localeCompare(b.dataset.engine);
 };
-
-// Reatach the sorted elements
-for (var i = 0; i < games.length; i++) {
-    // Detach and reattac element
-    var item = gamesList.removeChild(games[i]);
-    gamesList.appendChild(item);
-}
 
 
 // Platform filter
