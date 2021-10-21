@@ -114,7 +114,7 @@
         <developer>4A Games</developer>
         <engine>4A Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Xbox 360, Linux, OS X, Nintendo Switch, Stadia</platform>
-        <image></image>
+        <image>images/metro.jpg</image>
         <video></video>
     </game>
     <game id="14">
@@ -123,7 +123,7 @@
         <developer>Ubisoft</developer>
         <engine>Anvilnext</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3, Xbox One, Xbox 360, Nintendo Switch</platform>
-        <image></image>
+        <image>images/assassinscreed.jpg</image>
         <video></video>
     </game>
     <game id="15">
@@ -132,7 +132,7 @@
         <developer>IO Interacive</developer>
         <engine>Glacier Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, Linux, Stadia, macOS</platform>
-        <image></image>
+        <image>images/hitman.jpg</image>
         <video></video>
     </game>
     <game id="16">
@@ -141,7 +141,7 @@
         <developer>Quantic Dream</developer>
         <engine>Unreal Engine 3</engine>
         <platform>Microsoft Windows, Playstation 4, Playstation 3</platform>
-        <image></image>
+        <image>images/heavyrain.jpg</image>
         <video></video>
     </game>
     <game id="17">
@@ -159,7 +159,7 @@
         <developer>Techland</developer>
         <engine>Chrome Engine 6</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One, macOS, Linux, Nintendo Switch</platform>
-        <image></image>
+        <image>images/dyinglight.jpg</image>
         <video></video>
     </game>
     <game id="19">
@@ -168,7 +168,7 @@
         <developer>Valve</developer>
         <engine>Source</engine>
         <platform>Microsoft Windows, Playstation 3, Xbox 360, Linux, macOS X</platform>
-        <image></image>
+        <image>images/portal.jpg</image>
         <video></video>
     </game>
     <game id="20">
@@ -178,6 +178,15 @@
         <engine>Uunreal Engine 4</engine>
         <platform>Microsoft Windows</platform>
         <image>images/valorant.jpg</image>
+        <video></video>
+    </game>
+    <game id="21">
+        <title>Sea of Thieves</title>
+        <genre>Action-Adventure</genre>
+        <developer>Rare</developer>
+        <engine>Unreal Engine 4</engine>
+        <platform>Microsoft Windows, Xbox One, Xbox Series X/S</platform>
+        <image>images/sot.jpg</image>
         <video></video>
     </game>
 </catalog>
