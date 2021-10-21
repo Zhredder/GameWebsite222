@@ -578,8 +578,14 @@ footer {
   padding-bottom: 1rem;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
 }
 
 .section-padding {
@@ -588,11 +594,16 @@ h1 {
 }
 
 a {
-  color: #0066ff;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #cc00ff;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #bbbbbb;
 }
 
 .filter-container {

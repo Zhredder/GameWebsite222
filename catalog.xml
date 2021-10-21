@@ -3,7 +3,7 @@
     <game id="1">
         <title>GTA V</title>
         <genre>Action-Adventure</genre>
-        <developer>Rockstar North </developer>
+        <developer>Rockstar North</developer>
         <engine>RAGE</engine>
         <platform>PlayStation 3, Xbox 360, PlayStation 4, Xbox One, Microsoft Windows, PlayStation 5, Xbox Series X/S</platform>
         <image></image>
@@ -11,16 +11,16 @@
     </game>
     <game id="2">
         <title>Fortnite</title>
-        <genre>Survival, battle royale, sandbox </genre>
+        <genre>Survival, battle royale, sandbox</genre>
         <developer>Epic Games </developer>
         <engine>Unreal engine 4 </engine>
-        <platform>Microsoft Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS,[b] Android[b] </platform>
+        <platform>Microsoft Windows, macOS, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, iOS, Android</platform>
         <image></image>
         <video></video>
     </game>
     <game id="3">
         <title>Watch Dogs</title>
-        <genre>Action-adventure</genre>
+        <genre>Action-Adventure</genre>
         <developer>Ubisoft</developer>
         <engine>Disrupt</engine>
         <platform>Amazon Luna, Microsoft Windows, PlayStation 3, PlayStation 4, PlayStation 5, Stadia, Xbox 360, Xbox One, Xbox Series X/S, Wii U </platform>
@@ -68,7 +68,7 @@
         <genre>Factory simulator</genre>
         <developer>Wube Software</developer>
         <engine>Custom</engine>
-        <platform>Microsoft Windows, Mac OS, Linux</platform>
+        <platform>Microsoft Windows, macOS, Linux</platform>
         <image>images/factorio.jpg</image>
         <video>https://www.youtube.com/embed/J8SBp4SyvLc</video>
     </game>
@@ -77,13 +77,13 @@
         <genre>Top-down shooter</genre>
         <developer>Dennaton Games</developer>
         <engine>Game Maker 7/SilverWare</engine>
-        <platform>Microsoft Windows, Mac OS, Linux, PlayStation 4, Playstation 3, PlayStation Vita, Xbox One, Android, Switch, Stadia</platform>
+        <platform>Microsoft Windows, macOS, Linux, PlayStation 4, Playstation 3, PlayStation Vita, Xbox One, Android, Switch, Stadia</platform>
         <image>images/hotline_miami2.jpg</image>
         <video>https://www.youtube.com/embed/Kqr0yUuSiTs</video>
     </game>
     <game id="10">
         <title>Just Cause 3</title>
-        <genre>Action-adventure</genre>
+        <genre>Action-Adventure</genre>
         <developer>Avalanche Studios</developer>
         <engine>Avalanche Engine</engine>
         <platform>Microsoft Windows, Playstation 4, Xbox One</platform>
@@ -95,7 +95,7 @@
         <genre>Space flight simulator</genre>
         <developer>Squad</developer>
         <engine>Unity</engine>
-        <platform>Microsoft Windows, Mac OS, Linux, Playstation 4, Playstation 5, Xbox One, Xbox Series X/S</platform>
+        <platform>Microsoft Windows, macOS, Linux, Playstation 4, Playstation 5, Xbox One, Xbox Series X/S</platform>
         <image>images/ksp.jpg</image>
         <video>https://www.youtube.com/embed/7kTbo1wmN-w</video>
     </game>

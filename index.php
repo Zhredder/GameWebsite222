@@ -89,24 +89,26 @@ error_reporting(E_ALL);
                     <select name="platform-select" id="platform-select">
                         <option value="all" selected>All</option>
                         <option value="Windows">Windows</option>
-                        <option value="Mac">Mac</option>
+                        <option value="mac">macOS</option>
                         <option value="Linux">Linux</option>
                         <option value="Playstation">Playstation</option>
                         <option value="Xbox">Xbox</option>
                     </select>
                 </div>
             </div>
-            <div class="row">
+            <div id="games-list" class="row">
                 <?php
                 foreach ($catalog->children() as $game) {
-                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game'>\n";
+                    echo "<div class='col-12 col-md-6 col-lg-4 col-xl-3 game' 
+                    data-title='" . $game->title . "' data-developer='" . $game->developer . "' data-genre='" . $game->genre . "' 
+                    data-engine='" . $game->engine . "' data-platform='" . $game->platform . "'>\n";
                     echo "<a href='game.php?id=" . $game['id'] . "' class=''>";
                     if ($game->image != "") {
                         echo "<img src='" . $game->image . "'>";
                     } else {
                         echo "<img src='images/logo.png'>";
                     }
-                    echo "<p>" . $game->title . "</p>";
+                    echo "<p><span class='h2'>" . $game->title . "</span><br>" . $game->genre . "</p>";
                     echo "</a>\n</div>\n";
                 }
                 ?>
